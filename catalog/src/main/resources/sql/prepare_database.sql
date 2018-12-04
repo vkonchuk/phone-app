@@ -18,3 +18,6 @@ CREATE TABLE `phone` (
 INSERT INTO phone_app.phone SET name = 'Apple iPhone', description = 'iPhone\'s description', image_url = 'http://www.apple.com', price = 999.99;
 INSERT INTO phone_app.phone SET name = 'Samsung Galaxy S9', description = 'Galaxy\'s description', image_url = 'https://www.samsung.com', price = 989.99;
 INSERT INTO phone_app.phone SET name = 'Google Pixel 2', description = 'Pixel\'s description', image_url = 'https://www.google.com', price = 979.99;
+
+CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'testpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'testuser'@'localhost';

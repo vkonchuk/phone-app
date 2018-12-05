@@ -14,7 +14,7 @@ WORKDIR $HOME/catalog-service/tmp
 # build project using Gradle
 RUN ./gradlew clean build && \
     # copy and rename jar file to have a common name so we do not depend on project version
-    cp build/libs/1catalog-*.jar ../catalog-service.jar
+    cp build/libs/catalog-*.jar ../catalog-service.jar
 
 # switch to project directory
 WORKDIR $HOME/catalog-service

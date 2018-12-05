@@ -14,7 +14,7 @@ WORKDIR $HOME/order-service/tmp
 # build project using Gradle
 RUN ./gradlew clean build && \
     # copy and rename jar file to have a common name so we do not depend on project version
-    cp build/libs/1order-*.jar ../order-service.jar
+    cp build/libs/order-*.jar ../order-service.jar
 
 # switch to project directory
 WORKDIR $HOME/order-service

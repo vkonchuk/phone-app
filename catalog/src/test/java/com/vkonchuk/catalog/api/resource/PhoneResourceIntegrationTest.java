@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ public class PhoneResourceIntegrationTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Ignore("Need to remove @Ignore annotation when https://issues.apache.org/jira/browse/GROOVY-8339 is fixed")
     @Test
     public void returnAllPhonesIntegrationTest() {
         ResponseEntity<List<Phone>> responseEntity = restTemplate.exchange(PHONES_PATH, HttpMethod.GET, null, new ParameterizedTypeReference<List<Phone>>() {});

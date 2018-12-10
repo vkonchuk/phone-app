@@ -100,7 +100,6 @@ It returns order with all of the phones that were bought and with total price. E
 Future improvements:
 - add validation for all requests and request parameters for both Catalog Service and Order Service;
 - configure both projects together via Docker Compose for example so they can be started together much easily;
-- extract models that are common for both projects (for example "Phone" class) into a single library and use it instead of current approach;
 - add more tests and improve code coverage for both services;
 - add javadocs;
 - improve documentation and readme file.
